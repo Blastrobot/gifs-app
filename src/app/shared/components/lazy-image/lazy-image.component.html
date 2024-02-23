@@ -1,0 +1,5 @@
+<!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top"> -->
+
+<img [src]="url" [alt]="alt" class="animate__animated animate__fadeIn card-img-top" (load)="onLoad()" [ngStyle]="{ display: hasLoaded ? '' : 'none' }">
+
+<img src="assets/loader.svg" alt="" *ngIf="!hasLoaded">
